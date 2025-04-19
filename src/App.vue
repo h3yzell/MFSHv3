@@ -102,12 +102,12 @@ onMounted(()=>{
   <div class="min-h-screen bg-zinc-900 text-gray-200 p-6 font-mono">
     <div class="max-w-4xl mx-auto">
       <!-- PocketBase -->
-      <div>
-        <h1>To Dos</h1>
-        <input 
-          type="text" 
-          v-model="todoInput">
-        <button @click="createTodo">Add</button> 
+      <div class="bg-zinc-800 p-6 rounded-lg shadow-lg mb-8">
+        <h1 class="mb-3 text-center">To Dos</h1>
+        <input type="text" v-model="todoInput"
+        class="bg-zinc-700 border border-zinc-600 text-gray-200 py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent mb-3 ">
+        <button @click="createTodo" class="w-full bg-zinc-700 hover:bg-zinc-600 text-white py-2 px-4 rounded transition-all duration-200 border-l-4 border-blue-500 shadow-md">Add</button> 
+
       </div>
       <!-- Aura Controls Section -->
       <div class="bg-zinc-800 p-6 rounded-lg shadow-lg mb-8">
